@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/* css Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover,button:hover{
+    cursor: pointer;
+}
+/* css  */
+body{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:69.3125rem;
+    margin: 0 auto;
+    }
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.headerResponsive ,.MenuResponsive{
+    display: none;
+}
+.Logo,.logoFooter{
+    display: inline-block;
+    width:7.7025rem;
+    height: 2.041875rem;
+    background-image: url("../images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.MenuItem{
+    display: inline;
+    margin-left: 2rem;
+    font-size: 15px;
+   
+    font-weight: bold;
+}
+.MenuItem a{
+    color: #9E9AA8;
+}
+.MenuItem a:active{
+    color: #34313D;
+}
+.NavigationRight{
+    margin-left:-20rem;
+}
+.MenuItem.Login{
+    display: inline-block;
+    width: 105px;
+    height: 40px;
+    background:#2BD0D0;
+    border-radius: 28px;
+    line-height:40px;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+}
+.MenuItem.Login:active, button:active, .Description .btnStart:active
+,.BtnCopy:active
+{
+    background:#9AE3E3;
+    transition: all 0.6s ease-in-out;
+}
+.MenuItem.Login a{
+    color: #ffff;
+
+}
+.InfoShortLinkContiner{
+    min-height: 482px;
+    margin-top:4.875rem ;
+    background-image: url("../images/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-position: 780px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 152px;
+}
+.Description {
+    width:600px;
+    height:400px;
+    
+}
+.Description .Title{
+    font-size: 80px;
+    font-weight: 700;
+}
+.Description .Desc{
+    font-size:22px;
+    color:#9E9AA8;
+}
+.Description .btnStart{
+    width: 12.3125rem;
+    height: 3.5rem;
+    background: #2BD0D0;
+    color: #fff;
+    border: none;
+    border-radius: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:38px;
+    
+}
+.ShorterLinksContainer{
+    width:69.3125rem;
+    position: absolute;
+    height: 10.5rem;
+    top:-84px;
+    background-color: #3A3054;
+    background-image: url("../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+form input{
+    width:48.0625rem;
+    height: 4rem;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #34313D;
+    outline:none;
+}
+.MessageVal{
+    color: #F46363;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 8px;
+    opacity:0;
+}
+ form input.active::placeholder{
+    color:#F46363;
+    
+}
+form input.active{
+    border-color: #F46363;
+}
+.MessageVal.active{
+    opacity: 1;
+}
+.BtnShort{
+    width:11.75rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #2BD0D0;
+    margin-left: 24px;
+}
+.PerformanceCopy{
+    position: relative;
+    top:100px;
+}
+.ShortLinkItem{
+    width: 100%; 
+    background-color:#fff;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   padding:16px 24px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   
+}
+.ShortLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ShortLinks .textShortLink {
+    border:none;
+    color: #2BD0D0;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.LongLink{
+    font-size:20px;
+    color: #34313D;
+}
+.BtnCopy{
+    width:6.4375rem ;
+    height: 2.5rem;
+    background-color: #2BD0D0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 24px;
+}
+.BtnCopy.active{
+    background-color: #3A3054;
+}
+.group{
+    position: relative;
+    background: hsl(0, 0%, 75%)
+}
+.Advanced{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AdvancedContainer{
+     width: 33.75rem;
+    height: 8.125rem;
+    text-align: center;
+    padding-top: 204px;
+    
+}
+.AdvancedTitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+.AdvancedDescript{
+    font-size: 18px;
+    color: #9E9AA8;
+}
+.AdvancedSectionContainer{
+    display: flex;
+    margin-bottom: 120px;
+    margin-top: 110px;
+}
+
+.AdvancedSectionItem{
+    width:21.875rem ;
+    height: 16.6875rem;
+    background: #fff;
+    border-radius: 5px;
+    padding: 86px 0 44px 32px;
+    position: relative;
+}
+.AdvancedSectionItem.item1{
+    margin-top:110px
+}
+.AdvancedSectionItem.item2{
+    margin: 154px 30px 0 30px;
+}
+.AdvancedSectionItem.item3{
+    margin-top: 198px;
+ }
+.AdvancedSectionItem.item3::before, .AdvancedSectionItem.item1::after{
+    content: "";
+    position: relative;
+    display: block;
+    height: 8px;
+    width: 30px;
+    background-color: #2BD0D0;
+}
+.AdvancedSectionItem.item1::after{
+    top: -63px;
+    left: 318px;
+ }
+.AdvancedSectionItem.item3::before{
+    right:62px;
+    top: 5px;
+}
+
+.AdvancedSectionItem  h3{
+    font-size: 22px;
+    font-weight: 700;;
+}
+.AdvancedSectionDesc{
+    font-size: 15px;
+    color: #9E9AA8;
+    font-weight: 500;
+    margin-top: 28px;
+    
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    position: absolute;
+    background:#3A3054;
+    top: -44px;
+}
+.icon:after{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.icon.Recognition:after{
+    width:40px;
+    height:40px;
+    background-image: url("../images/icon-brand-recognition.svg");
+  
+}
+.icon.Records:after{
+    width: 39.94px;
+    height: 39.94px;
+    background-image: url("../images/icon-detailed-records.svg");
+}
+.icon.Customizable:after{
+    width: 47.47px;
+    height: 48px;
+    background-image: url("../images/icon-fully-customizable.svg");
+}
+.Boots{
+    background-image: url("../images/bg-boost-desktop.svg");
+    min-height: 15.625rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #3A3054;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.Boots h3{
+    font-size: 40px;
+    color: #fff;
+}
+.BtnBootsStart{
+    width:12.3125rem;
+    height:3.5rem;
+    border: none;
+    background-color: #2BD0D0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 28px;
+    font-weight: bold;
+    margin-top:32px
+    
+}
+.Footer{
+    min-height:19.375rem;
+    background-color:#232127;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logoFooter{
+    filter: invert(100%) sepia(96%) saturate(15%) hue-rotate(212deg) brightness(104%) contrast(104%);
+}
+.FooterMenu li:not(:first-child){
+    font-size: 15px;
+    margin-bottom: 19px;
+}
+.FooterMenu li:not(.Header) a{
+    color: #BFBFBF; 
+  }
+  .FooterMenu li:not(.Header):active a{
+    color: #2BD0D0;; 
+  }
+.FooterMenu li:first-child{
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom: 33px;
+}
+.Header a{
+    color: #fff;
+}
+
+.FooterNavigation{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.SocialMedia span{
+    display: inline-block;
+    width:1.5rem ;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.SocialMedia span:not(:first-child){
+    margin-left: 24px;
+}
+.SocialMedia span:active{
+    filter: invert(76%) sepia(90%) saturate(444%) hue-rotate(131deg) brightness(86%) contrast(88%);
+}
+.FaceBook{
+    background-image: url("../images/icon-facebook.svg");
+}
+.Twitter{
+    background-image: url("../images/icon-twitter.svg");
+
+}
+.Dribbble{
+    background-image: url("../images/icon-pinterest.svg");
+}
+.instagram{
+    background-image: url("../images/icon-instagram.svg");
+}
+/* mobile */
+@media (max-width:768px) {
+    body{
+        width:100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading{
+        display: none;
+    }
+    .container{
+        width:20.4375rem;
+   
+     
+      
+    }
+    .headerResponsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoResponsive{
+       width: 7.5025rem;
+       height: 2.041875rem;
+       background-image: url("../images/logo.svg");
+       background-size: contain;
+       background-repeat: no-repeat;
+    }
+    .HambergerMenu div{
+            width: 35px;
+            height: 5px;
+            background-color: #9E9AA8;
+            margin: 6px 0;
+    }
+    .HambergerMenu:hover{
+        cursor: pointer;
+    }
+    .MenuResponsive{
+         min-height: 0;
+         height: 0; 
+        background-color: #3A3054;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition:min-height 0.5s ease-in-out
+         ;
+         position: relative;
+         top:15px;
+    }
+    .MenuResponsiveTop.responsive.active,
+    .MenuResponsiveBottom.responsive.active,
+    .border.responsive.active
+    {
+            display: block;
+            transition: display 0.5s ease-in-out;
+    }
+    
+    .MenuResponsive.responsive.active{
+        min-height:24rem;
+        transition: min-height 0.4s ease-in-out;
+    }
+    .MenuResponsiveItem a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .border{
+        width: 17.4375rem;
+        height:1px;
+        background-color:#9E9AA8 ;
+        border: none;
+        opacity: 0.25;
+        margin-top:40px;
+        display: none;
+        position: absolute;
+        transition: display 0.2s ease-in-out;
+        
+    }
+    .MenuResponsiveTop {
+        display: none;
+        transition: display 0.2s ease-in-out;
+        
+    }
+    .MenuResponsiveBottom{
+        margin-bottom: 46px;
+        display: none;
+        transition: display 0.2s ease-in-out;
+        
+    }
+    .MenuContainerResponsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .MenuResponsiveItem{
+        margin-top: 42px;
+    }
+    .MenuResponsiveItem.Login{
+        width: 17.4375rem;
+        height: 3rem;
+        background-color: #2BD0D0;
+        border-radius: 28px;
+        line-height: 3rem;
+        text-align: center;
+    }
+    .InfoShortLinkContiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .backgroundPattern{
+        background-image: url("../images/illustration-working.svg");
+        background-position: 5px 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width:460px;
+        min-height: 337px;
+        margin-top: -30px;
+        margin-left: 150px;
+    }
+    .Description{
+        width: 20.4375rem;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+ 
+    .Description .Title{
+        font-size: 42px;
+    }
+    .Description  .Desc{
+        font-size: 18px;
+    }
+    .ShorterLinksContainer{
+        width: 20.4375rem;
+        background-image: url("../images/bg-shorten-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }  
+    form input, .BtnShort{
+        width: 17.4375rem;
+        height: 3rem;
+        font-size: 18px;
+    
+    }
+    form input{
+        margin-bottom: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .BtnShort{
+        margin: 0;
+    }
+    .ShortLinkItem{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0;
+    }
+    .ShortLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+      
+    }
+    .longLink , .ShortLinks{
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .ShortLinkItem p{
+        margin-left: 16px;
+    }
+    .BtnCopy{
+        width: 18.4375rem;
+        margin: 16px;
+    }
+    .borderResponsive{
+        border: none;
+        width: 20.4375rem;
+        height: 1px ;
+        background-color: #9E9AA8 ;
+        opacity: 0.25;
+        margin-top: 6px;
+    }
+    .AdvancedContainer{
+        width:20.4375rem;
+        padding-top: 0;
+        margin-top:150px;
+    }
+    
+    .AdvancedTitle{
+        font-size: 28px;
+    }
+    .AdvancedDescript{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .AdvancedSectionContainer{
+        flex-direction: column;
+        justify-content:center;
+         align-items: center; 
+        margin-top: 0;   }
+        .AdvancedSectionItem{
+            width:20.4375rem;
+            padding: 77px 32px 41px 32px;
+            text-align: center;
+        }
+    .AdvancedSectionItem.item1,.AdvancedSectionItem.item2,.AdvancedSectionItem.item3{
+        margin-top: 92px;
+    }
+    .AdvancedSectionDesc{
+        margin-top: 12px;
+    }
+    .AdvancedSectionItem.item3{
+        padding-top: 40px;
+    }
+    .icon{
+        left:120px;
+
+    }
+    .AdvancedSectionItem.item3::before, .AdvancedSectionItem.item1::after{
+        width: 8px;
+        height:47px;
+    }
+    .AdvancedSectionItem.item1::after{
+        top: 54px;
+        left: 130px;
+     }
+    .AdvancedSectionItem.item3::before{
+        top: -131px;
+        left: 129px;
+    }
+    .Boots{
+     background-image: url("../images/bg-boost-mobile.svg");
+     margin-top: 0px;
+    }
+    .Boots h3{
+        font-size: 28px;
+    }
+    .Footer{
+        width:20.4375rem;
+        min-height: 700px;
+        
+    }
+    .FooterNavigation{
+        flex-direction: column;
+        justify-content:center;
+         align-items: center;
+         padding:56px 0;
+
+
+    }
+    .FooterMenu{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .SocialMedia{
+        margin-top: 48px;
+       
+    }
+}

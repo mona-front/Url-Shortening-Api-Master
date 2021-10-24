@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+    <header>
+      <div class="container">
+        <div class="heading">
+          <span  class="Logo"></span>
+          <nav class="NavigationRight"> 
+            <ul class="MenuContainer">
+              <li class="MenuItem"> <a href="#">Features</a></li>
+              <li class="MenuItem"> <a href="#">Pricing</a></li>
+              <li class="MenuItem"> <a href="#">Resourcess</a></li>
+          </ul>
+          </nav>
+          <nav class="NavigationLeft">
+            <ul class="MenuContainer">
+              <li class="MenuItem"> <a href="#">Login</a></li>
+            
+              <li class="MenuItem Login"><a href="#"> Sign Up</a>
+              </li>
+          </ul>
+          </nav>
+          </div>
+        </header>
+          <!-- HambergerMenu -->
+      <div class="container">
+        <header class="headerResponsive">
+          <div class="logoResponsive">
+          </div>
+          <div class="HambergerMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </header>
+      </div>
+      
+      <!-- ResponsiveMenu -->
+      <div class="container">
+        <section class="MenuResponsive responsive">
+          <nav class="MenuResponsiveTop responsive"> 
+            <ul class="MenuContainerResponsive">
+              <li class="MenuResponsiveItem"> <a href="#">Features</a></li>
+              <li class="MenuResponsiveItem"> <a href="#">Pricing</a></li>
+              <li class="MenuResponsiveItem"> <a href="#">Resourcess</a></li>
+          </ul>
+          </nav>
+          <hr class="border responsive"/>
+          <nav class="MenuResponsiveBottom responsive">
+            <ul class="MenuContainerResponsive">
+              <li class="MenuResponsiveItem"> <a href="#">Login</a></li>
+              <li class="MenuResponsiveItem Login"><a href="#"> Sign Up</a>
+              </li>
+          </ul>
+          </nav>
+        </section>
+      </div>
+      
+  <!-- end RsponsiveMenu -->
+  <!-- main -->
+    <main>
+      <section class="InfoShortLinkContiner">
+        <div class="backgroundPattern"></div>
+        <div class="container ">
+          
+            <article class="Description">
+              <h1 class="Title">More than just shorter links</h1>
+              <p class="Desc"> Build your brand’s recognition and get detailed insights 
+                on how your links are performing.</p>
+                <button class="btnStart"> Get Started</button>
+          </article>
+          
+          
+        </div>
+        
+      </section>
+        <section class="group">
+          <div class="container">
+            <!-- short -->
+               <section class="ShorterLinksContainer">
+                <form>
+                  <input type="url" placeholder=" Shorten a link here..." id="urlinput" /> 
+                  <button class="BtnShort">
+                    Shorten It!
+                  </button>
+                  <p class="MessageVal">Please add a link</p>
+                </form>
+             </section>
+             <section class="PerformanceCopy">
+                <div class="ShortLinkItem">
+                  <div class="longLink"> 
+                    <p class="textLink"></p>
+                   </div>
+                   <hr class="borderResponsive"/>
+                  <div class="ShortLinks">
+                    <input class="textShortLink" style="border:none"></input>
+                    <button class="BtnCopy">Copy</button>
+                   </div>
+                </div>  
+          </section>  
+           <!-- advanc -->
+           <section class="Advanced">
+              <div  class="AdvancedContainer">
+                <h2 class="AdvancedTitle">Advanced Statistics</h2>
+                <p class="AdvancedDescript">Track how your links are performing across the web with our 
+                  advanced statistics dashboard.</p>
+              </div>
+            <div class="AdvancedSectionContainer"> 
+              <!-- section1 -->
+               <div class="AdvancedSectionItem item1 ">
+                <span class="icon Recognition"></span>
+                <h3>
+                  Brand Recognition
+                </h3>
+                <p class="AdvancedSectionDesc">
+                    Boost your brand recognition with each click. Generic links don’t 
+                      mean a thing. Branded links help instil confidence in your content. 
+                </p>
+              </div> 
+              <!-- section two -->
+                <div class="AdvancedSectionItem item2">
+                <span class="icon Records"></span>
+                <h3>
+                  Detailed Records
+                </h3>
+                <p class="AdvancedSectionDesc">
+                  Gain insights into who is clicking your links. Knowing when and where 
+                  people engage with your content helps inform better decisions.
+                </p>
+              </div>
+              <!-- section three -->
+               <div class="AdvancedSectionItem item3">
+                <span class="icon Customizable"></span>
+                <h3>
+                  Fully Customizable
+                </h3>
+                <p class="AdvancedSectionDesc">
+                  Improve brand awareness and content discoverability through customizable 
+                  links, supercharging audience engagement.
+                </p>
+              </div>
+          </section>
+          </div>
+         </section> 
+        <section class="Boots">
+           <h3>
+            Boost your links today
+          </h3>
+          <button class="BtnBootsStart">Get Started</button>
+        </section>
+      </main>
+      <footer>
+         <section class="Footer"> 
+          <div class="container">
+            <nav class="FooterNavigation"> 
+              <!-- FooterLogo -->
+              <span class="logoFooter"></span>
+              <!-- FooterMenu -->
+               <ul  class="FooterMenu"> 
+                <li class="FooterMenuItem Header"> <a href="#">Features</a> 
+                </li>
+                <li class="FooterMenuItem"><a href="#">Link Shortening</a></li>
+                <li class="FooterMenuItem"><a href="#">Branded Links</a> </li>
+                <li class="FooterMenuItem"> <a href="#">Analytics</a></li>
+            </ul>
+              <ul  class="FooterMenu">
+                <li class="FooterMenuItem Header"> <a href="#">Resources</a></li>
+                <li class="FooterMenuItem"> <a href="#">Blog</a></li>
+                <li class="FooterMenuItem"> <a href="#">Developers</a></li>
+                <li class="FooterMenuItem"> <a href="#">Support</a> 
+                </li>
+              </ul>
+              <ul  class="FooterMenu">
+                <li class="FooterMenuItem Header"> <a href="#">Company</a> </li>      
+                <li class="FooterMenuItem"> <a href="#">About</a> </li>
+                <li class="FooterMenuItem"> <a href="#">Our Team</a> </li>
+                <li class="FooterMenuItem"> <a href="#">Careers</a> </li>
+                <li class="FooterMenuItem"> <a href="#">Contact</a>  </li> 
+              </ul>
+              <!-- FooterSocialMedia -->
+               <div class="SocialMedia">  
+                <span class="FaceBook"></span>
+                <span class="Twitter"></span>
+                <span class="Dribbble"></span>
+                <span class="instagram"></span>
+              </div>
+            </nav>
+           
+          </div>
+         
+        </section>
+    </footer>
+  </div>
+
+
+ <script src="./js/jquery-3.6.0.min.js"></script>
+ <script src="./js/all.min.js"></script>
+  
+  <script src="./js/main.js"></script>
+
+
+  
+
+</body>
+</html>
